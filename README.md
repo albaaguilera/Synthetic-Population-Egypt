@@ -2,19 +2,10 @@
 
 This repository contains the code used to generate and validate a financial-focused synthetic population for Egypt. In particular:
 
-- the population synthesis bayesian model
-- the validation workflow, plots and reports
-- the resulting synthetic person and SME populations with documentation reports
-
-It does not include the raw source datasets. The repository only contains an empty `data/` folder as a placeholder.
-
-## Repository Structure
-
-- `model.py`: main pipeline for harmonizing source inputs, learning the probabilistic structure, and generating synthetic persons and SMEs
-- `validation.py`: validation workflow comparing synthetic outputs against the original harmonized sources
-- `docs/`: schema documentation, variable-selection notes, and validation report
-- `outputs/`: learned model artifacts, generated synthetic populations, and validation outputs
-- `data/`: empty placeholder folder for raw inputs, intentionally not versioned here
+- `model.py`: model for harmonizing source inputs, learning the probabilistic structure, and generating synthetic persons and SMEs
+- `validation.py`: the validation workflow comparing synthetic outputs against the original harmonized sources
+- `outputs/` and `docs/`: resulting synthetic person and SME populations with documentation and validation reports
+- `data/`: empty placeholder folder for raw inputs
 
 ## Included Outputs
 
