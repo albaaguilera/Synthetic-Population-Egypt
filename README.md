@@ -11,7 +11,7 @@ This repository contains the code used to generate and validate a financial-focu
 
 The repository includes: 
 
-- `outputs/egypt_synthetic_persons_N.csv`: the generated populations for number of agents N = 1000, 10000, 20000:
+- `outputs/egypt_synthetic_persons_N.csv`: the generated populations for number of agents N = 1.000, 10.000, 20.000
 - learned Bayesian-network in `outputs/`
 - validation figures and metrics in `outputs/validation/`
 - the synthetic population documentation in `docs/egypt_synthetic_population_schema.md`
