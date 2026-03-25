@@ -1,0 +1,667 @@
+{
+  "core_columns": [
+    "sex",
+    "age_band",
+    "education_level",
+    "urban_rural",
+    "in_workforce"
+  ],
+  "core_edges": [
+    [
+      "age_band",
+      "in_workforce"
+    ],
+    [
+      "age_band",
+      "sex"
+    ],
+    [
+      "in_workforce",
+      "sex"
+    ],
+    [
+      "education_level",
+      "age_band"
+    ],
+    [
+      "education_level",
+      "in_workforce"
+    ],
+    [
+      "education_level",
+      "urban_rural"
+    ],
+    [
+      "urban_rural",
+      "age_band"
+    ]
+  ],
+  "dataset_shapes": {
+    "lfs": [
+      199751,
+      23
+    ],
+    "findex": [
+      1001,
+      85
+    ],
+    "elmps_person": [
+      41734,
+      31
+    ],
+    "elmps_sme": [
+      4439,
+      30
+    ]
+  },
+  "dataset_parent_maps": {
+    "lfs": {
+      "lfs_region": [
+        "education_level",
+        "urban_rural",
+        "in_workforce"
+      ],
+      "lfs_marital_status": [
+        "sex",
+        "age_band",
+        "education_level"
+      ],
+      "lfs_employment_status": [
+        "sex",
+        "age_band",
+        "in_workforce"
+      ],
+      "lfs_occupation_group": [
+        "sex",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_industry_group": [
+        "sex",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_sector": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_workplace_type": [
+        "sex",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_job_stability": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_contract_type": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_health_insurance": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_social_security": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_works_in_establishment": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_establishment_size_band": [
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_has_secondary_job": [
+        "sex",
+        "age_band",
+        "in_workforce"
+      ],
+      "lfs_weekly_hours_band": [
+        "sex",
+        "age_band",
+        "in_workforce"
+      ],
+      "lfs_monthly_wage_band": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "lfs_employer_income_band": [
+        "age_band",
+        "in_workforce"
+      ],
+      "lfs_self_employed_income_band": [
+        "sex",
+        "age_band",
+        "in_workforce"
+      ]
+    },
+    "findex": {
+      "findex_inc_q": [],
+      "findex_account_fin": [
+        "age_band"
+      ],
+      "findex_account_mob": [
+        "sex",
+        "education_level"
+      ],
+      "findex_account": [
+        "age_band"
+      ],
+      "findex_dig_account": [
+        "education_level",
+        "in_workforce"
+      ],
+      "findex_fin2": [
+        "age_band"
+      ],
+      "findex_fin10": [
+        "age_band"
+      ],
+      "findex_fin11_0": [
+        "age_band"
+      ],
+      "findex_fin11_1": [
+        "age_band"
+      ],
+      "findex_fin11_2": [
+        "age_band"
+      ],
+      "findex_saved": [
+        "in_workforce"
+      ],
+      "findex_fin17a": [
+        "education_level"
+      ],
+      "findex_fin17b": [
+        "education_level"
+      ],
+      "findex_fin17c": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin17e": [
+        "sex"
+      ],
+      "findex_fin17f": [
+        "sex"
+      ],
+      "findex_fin18": [
+        "in_workforce"
+      ],
+      "findex_fin19": [
+        "sex"
+      ],
+      "findex_borrowed": [
+        "age_band"
+      ],
+      "findex_fin20": [],
+      "findex_fin21": [],
+      "findex_fin22a": [],
+      "findex_fin22a_1": [
+        "education_level"
+      ],
+      "findex_fin22b": [],
+      "findex_fin22c": [],
+      "findex_fin22d": [
+        "education_level"
+      ],
+      "findex_fin22e": [
+        "in_workforce"
+      ],
+      "findex_fin22f": [
+        "education_level"
+      ],
+      "findex_fin22g": [],
+      "findex_fin22h": [],
+      "findex_fin23": [],
+      "findex_receive_wages": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin32": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin33": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin34a": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin34b": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin34c": [
+        "sex",
+        "in_workforce"
+      ],
+      "findex_fin34d": [],
+      "findex_fin35": [
+        "in_workforce"
+      ],
+      "findex_fin36": [
+        "in_workforce"
+      ],
+      "findex_fin36a": [],
+      "findex_pay_utilities": [
+        "age_band"
+      ],
+      "findex_fin30": [
+        "age_band"
+      ],
+      "findex_fin31a": [
+        "age_band"
+      ],
+      "findex_fin31b": [
+        "age_band"
+      ],
+      "findex_fin31c": [],
+      "findex_fin31d": [
+        "age_band"
+      ],
+      "findex_domestic_remittances": [
+        "sex"
+      ],
+      "findex_fh1": [
+        "in_workforce"
+      ],
+      "findex_fin28": [
+        "in_workforce"
+      ],
+      "findex_fh2": [],
+      "findex_fin29": [
+        "sex"
+      ],
+      "findex_fh2a": [],
+      "findex_receive_transfers": [
+        "in_workforce"
+      ],
+      "findex_receive_pensions": [
+        "age_band"
+      ],
+      "findex_receive_agriculture": [
+        "in_workforce"
+      ],
+      "findex_fin37": [
+        "in_workforce"
+      ],
+      "findex_fin38": [
+        "age_band"
+      ],
+      "findex_fin39a": [
+        "age_band"
+      ],
+      "findex_fin39b": [
+        "age_band",
+        "in_workforce"
+      ],
+      "findex_fin39c": [],
+      "findex_fin39d": [
+        "urban_rural"
+      ],
+      "findex_fin5": [
+        "age_band"
+      ],
+      "findex_fin6": [
+        "age_band"
+      ],
+      "findex_fin7": [],
+      "findex_fin8": [
+        "age_band"
+      ],
+      "findex_merchantpay_dig": [
+        "education_level"
+      ],
+      "findex_anydigpayment": [
+        "education_level",
+        "in_workforce"
+      ],
+      "findex_fin3": [
+        "age_band"
+      ],
+      "findex_fin26a": [
+        "sex"
+      ],
+      "findex_fin26b": [
+        "education_level",
+        "in_workforce"
+      ],
+      "findex_fin27": [
+        "in_workforce"
+      ],
+      "findex_fin9a": [
+        "age_band"
+      ],
+      "findex_fin9b": [
+        "age_band"
+      ],
+      "findex_fin11a": [
+        "age_band"
+      ],
+      "findex_fin11b": [
+        "age_band"
+      ],
+      "findex_fin11c": [
+        "age_band"
+      ],
+      "findex_fin11d": [
+        "age_band"
+      ],
+      "findex_fin11e": [
+        "age_band"
+      ],
+      "findex_fin11f": [
+        "age_band"
+      ]
+    },
+    "elmps_person": {
+      "elmps_employment_status": [
+        "sex",
+        "age_band",
+        "in_workforce"
+      ],
+      "elmps_job_formality": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_firm_size_band": [
+        "sex",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_social_insurance_job": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_has_job_contract": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_medical_insurance_job": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_paid_leave_job": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_paid_sick_leave_job": [
+        "age_band",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_has_secondary_job": [
+        "sex",
+        "age_band",
+        "in_workforce"
+      ],
+      "elmps_owns_mobile_phone": [
+        "sex",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_has_mobile_wallet": [
+        "sex",
+        "age_band",
+        "education_level"
+      ],
+      "elmps_has_any_savings": [
+        "sex",
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_savings_method": [
+        "sex",
+        "in_workforce"
+      ],
+      "elmps_savings_interest_bearing": [
+        "sex",
+        "education_level"
+      ],
+      "elmps_applied_formal_loan_last12m": [
+        "age_band",
+        "in_workforce"
+      ],
+      "elmps_formal_loan_outcome": [
+        "age_band"
+      ],
+      "elmps_formal_lender_type": [
+        "in_workforce"
+      ],
+      "elmps_formal_loan_purpose": [
+        "in_workforce"
+      ],
+      "elmps_formal_loan_cost_type": [
+        "age_band"
+      ],
+      "elmps_borrowed_from_individuals_last12m": [
+        "age_band"
+      ],
+      "elmps_amount_borrowed_from_individuals_band": [
+        "age_band"
+      ],
+      "elmps_informal_loan_cost_type": [
+        "age_band"
+      ],
+      "elmps_has_bank_account": [
+        "education_level",
+        "in_workforce"
+      ],
+      "elmps_bank_savings_amount_band": [
+        "education_level"
+      ],
+      "elmps_num_enterprises_managed": [
+        "age_band",
+        "in_workforce"
+      ],
+      "elmps_manages_sme": [
+        "age_band",
+        "in_workforce"
+      ]
+    },
+    "elmps_sme": {
+      "sme_enterprise_activity_1digit": [
+        "sex",
+        "education_level"
+      ],
+      "sme_enterprise_age_band": [
+        "sex",
+        "age_band"
+      ],
+      "sme_ownership_structure": [
+        "sex"
+      ],
+      "sme_household_ownership_share_band": [],
+      "sme_workplace_type": [
+        "sex",
+        "urban_rural"
+      ],
+      "sme_current_capital_band": [
+        "sex"
+      ],
+      "sme_startup_capital_band": [
+        "sex"
+      ],
+      "sme_startup_capital_source": [],
+      "sme_primary_buyer_type": [],
+      "sme_has_business_license": [
+        "sex",
+        "urban_rural"
+      ],
+      "sme_has_commercial_registration": [
+        "sex",
+        "urban_rural"
+      ],
+      "sme_keeps_accounting_books": [
+        "sex",
+        "urban_rural"
+      ],
+      "sme_has_online_page_or_storefront": [
+        "education_level"
+      ],
+      "sme_has_mobile_sales_app": [
+        "education_level"
+      ],
+      "sme_share_of_sales_online_band": [],
+      "sme_hires_nonhousehold_workers": [
+        "sex",
+        "urban_rural"
+      ],
+      "sme_num_nonhousehold_workers_band": [
+        "sex"
+      ],
+      "sme_num_related_external_workers_band": [
+        "sex"
+      ],
+      "sme_any_workers_with_social_insurance": [
+        "urban_rural"
+      ],
+      "sme_num_workers_with_social_insurance_band": [
+        "sex"
+      ],
+      "sme_new_workers_joined_last12m": [
+        "sex"
+      ],
+      "sme_workers_left_last12m": [
+        "sex"
+      ],
+      "sme_annual_wage_bill_band": [
+        "sex"
+      ],
+      "sme_annual_taxes_paid_band": [
+        "urban_rural"
+      ],
+      "sme_average_monthly_net_earnings_band": [
+        "sex"
+      ]
+    }
+  },
+  "findex_doc_variables_present": [
+    "year",
+    "economy",
+    "pop_adult",
+    "wpid_random",
+    "wgt",
+    "female",
+    "age",
+    "educ",
+    "inc_q",
+    "emp_in",
+    "urbanicity",
+    "account_fin",
+    "account_mob",
+    "account",
+    "dig_account",
+    "fin2",
+    "fin10",
+    "fin11_0",
+    "fin11_1",
+    "fin11_2",
+    "saved",
+    "fin17a",
+    "fin17b",
+    "fin17c",
+    "fin17e",
+    "fin17f",
+    "fin18",
+    "fin19",
+    "borrowed",
+    "fin20",
+    "fin21",
+    "fin22a",
+    "fin22a_1",
+    "fin22b",
+    "fin22c",
+    "fin22d",
+    "fin22e",
+    "fin22f",
+    "fin22g",
+    "fin22h",
+    "fin23",
+    "receive_wages",
+    "fin32",
+    "fin33",
+    "fin34a",
+    "fin34b",
+    "fin34c",
+    "fin34d",
+    "fin35",
+    "fin36",
+    "fin36a",
+    "pay_utilities",
+    "fin30",
+    "fin31a",
+    "fin31b",
+    "fin31c",
+    "fin31d",
+    "domestic_remittances",
+    "fh1",
+    "fin28",
+    "fh2",
+    "fin29",
+    "fh2a",
+    "receive_transfers",
+    "receive_pensions",
+    "receive_agriculture",
+    "fin37",
+    "fin38",
+    "fin39a",
+    "fin39b",
+    "fin39c",
+    "fin39d",
+    "fin5",
+    "fin6",
+    "fin7",
+    "fin8",
+    "merchantpay_dig",
+    "anydigpayment",
+    "fin3",
+    "fin26a",
+    "fin26b",
+    "fin27",
+    "fin9a",
+    "fin9b",
+    "fin11a",
+    "fin11b",
+    "fin11c",
+    "fin11d",
+    "fin11e",
+    "fin11f"
+  ],
+  "findex_doc_variables_missing_from_csv": [
+    "fin1",
+    "fin25e_1",
+    "fin25e_2",
+    "fin25e_3",
+    "fin25e_4",
+    "fin11g",
+    "fin11h",
+    "fin11i",
+    "fin11j"
+  ],
+  "sample_summaries": [
+    {
+      "requested_persons": 20000,
+      "synthetic_persons": 20000,
+      "synthetic_smes": 4318
+    }
+  ]
+}
