@@ -18,31 +18,13 @@ It does not include the raw source datasets. The repository only contains an emp
 
 ## Included Outputs
 
-The repository includes the following generated populations:
+The repository includes: 
 
-- `outputs/egypt_synthetic_persons_1000.csv`
-- `outputs/egypt_synthetic_persons_10000.csv`
-- `outputs/egypt_synthetic_persons_20000.csv`
-- `outputs/egypt_synthetic_smes_1000.csv`
-- `outputs/egypt_synthetic_smes_10000.csv`
-- `outputs/egypt_synthetic_smes_20000.csv`
-
-It also includes:
-
-- learned Bayesian-network artifacts in `outputs/`
+- `outputs/egypt_synthetic_persons_N.csv`: the generated populations for number of agents N = 1000, 10000, 20000:
+- learned Bayesian-network in `outputs/`
 - validation figures and metrics in `outputs/validation/`
-- the synthetic population schema in `docs/egypt_synthetic_population_schema.md`
+- the synthetic population documentation in `docs/egypt_synthetic_population_schema.md`
 - the validation report in `docs/egypt_synthetic_population_validation.md`
-
-## Data Requirements
-
-The generation code expects the raw source files to be placed manually in the `data/` directory using the same subfolder layout referenced in `model.py`. Those files are not distributed in this repository.
-
-Expected source groups:
-
-- `data/LFS 2024/`
-- `data/FINDEX 2024/`
-- `data/ELMPS 2023/`
 
 ## How To Run
 
@@ -58,7 +40,15 @@ Run validation:
 python validation.py --sample-sizes 1000 10000
 ```
 
-## Notes
 
-- The code in this repository is the synthetic-population generation layer only. It does not include the downstream simulation repository.
-- The exported outputs are kept so the repository is reproducible as a data product even without redistributing the raw microdata.
+## Data Requirements
+
+The generation code expects the raw source files to be placed manually in the `data/` directory using the same subfolder layout referenced in `model.py`. Those files are not distributed in this repository.
+
+Expected source groups:
+
+- `data/LFS 2024/` - Economic Research Forum
+- `data/FINDEX 2024/` - World Bank
+- `data/ELMPS 2023/` - Economic Research Forum
+
+
