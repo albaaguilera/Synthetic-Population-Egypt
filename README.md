@@ -1,15 +1,10 @@
 # Synthetic Population Egypt
 
-This repository contains the code and exported artifacts used to generate and validate the Egypt synthetic population used in this project.
+This repository contains the code used to generate and validate a financial-focused synthetic population for Egypt. In particular:
 
-It is intentionally limited to:
-
-- the synthetic population generation model
-- the validation workflow
-- the synthetic population documentation and reports
-- the learned model artifacts used by the generator
-- the resulting synthetic person and SME populations
-- the validation plots and summary tables
+- the population synthesis bayesian model
+- the validation workflow, plots and reports
+- the resulting synthetic person and SME populations with documentation reports
 
 It does not include the raw source datasets. The repository only contains an empty `data/` folder as a placeholder.
 
