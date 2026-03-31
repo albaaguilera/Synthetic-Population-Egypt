@@ -1,0 +1,23 @@
+size,dataset,label,columns,slope,intercept,r2,num_cells
+1000,lfs,Gender x age band,sex x age_band,0.9598324919943605,0.003347292333803299,0.9268993160516927,12
+1000,lfs,Workforce x LFS firm size,in_workforce x lfs_establishment_size_band,1.000533268885271,-5.332688852713199e-05,0.9998954156565614,10
+1000,elmps_person,Gender x job formality,sex x elmps_job_formality,0.8933270936323783,0.01777881772793703,0.9968147208956525,6
+1000,elmps_person,Workforce x ELMPS firm size,in_workforce x elmps_firm_size_band,1.065156006860134,-0.004072250428758455,0.994840995263918,16
+1000,findex,Urbanicity x gender x account,urban_rural x sex x findex_account_fin,0.07678474630986788,0.1154019067112665,0.012149355732601452,8
+1000,findex,Urbanicity x gender x savings,urban_rural x sex x findex_saved,0.6806196564775716,0.039922542940303514,0.5383985680048793,8
+1000,findex,Urbanicity x gender x barrier 11a,urban_rural x sex x findex_fin11a,0.7711883410118059,0.015254110599212915,0.6917642132208746,15
+1000,sme,Manager gender x business license,sex x sme_has_business_license,0.5391948487648307,0.07680085853919486,0.4507406742265747,6
+1000,sme,Manager urbanicity x business license,urban_rural x sme_has_business_license,0.9922563076132782,0.0012906153977868557,0.9594527143125546,6
+1000,sme,External workforce x capital,sme_hires_nonhousehold_workers x sme_current_capital_band,0.9493958215849607,0.003162761150940015,0.8931429386904948,16
+1000,sme,License x registration,sme_has_business_license x sme_has_commercial_registration,0.7062716577654952,0.03263648247050053,0.8120613135087394,9
+10000,lfs,Gender x age band,sex x age_band,0.9790137450096377,0.0017488545825302163,0.9879255277027479,12
+10000,lfs,Workforce x LFS firm size,in_workforce x lfs_establishment_size_band,0.9974553065230511,0.0002544693476948488,0.9997334331498653,10
+10000,elmps_person,Gender x job formality,sex x elmps_job_formality,0.8606136273668499,0.023231062105525162,0.9957282266049574,6
+10000,elmps_person,Workforce x ELMPS firm size,in_workforce x elmps_firm_size_band,1.061263646651035,-0.003828977915689747,0.9987707537600284,16
+10000,findex,Urbanicity x gender x account,urban_rural x sex x findex_account_fin,-0.01674303494034704,0.12709287936754332,0.0005656291698783456,8
+10000,findex,Urbanicity x gender x savings,urban_rural x sex x findex_saved,0.6192608888326447,0.0475923888959194,0.45122238713597207,8
+10000,findex,Urbanicity x gender x barrier 11a,urban_rural x sex x findex_fin11a,0.7539549716685107,0.015377814270718089,0.6570176177094937,16
+10000,sme,Manager gender x business license,sex x sme_has_business_license,0.7297219767171205,0.045046337213813195,0.7787494186766936,6
+10000,sme,Manager urbanicity x business license,urban_rural x sme_has_business_license,0.9566438367695169,0.0072260272050804165,0.9311193955024574,6
+10000,sme,External workforce x capital,sme_hires_nonhousehold_workers x sme_current_capital_band,1.0014255503328924,-8.909689580571996e-05,0.9723609680125829,16
+10000,sme,License x registration,sme_has_business_license x sme_has_commercial_registration,0.693876928596287,0.034013674600412526,0.8038633547520663,9
