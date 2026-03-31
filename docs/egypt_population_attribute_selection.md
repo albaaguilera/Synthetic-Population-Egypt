@@ -279,12 +279,3 @@ These transformations should be applied before model training.
 | Reshape ELMPS enterprise blocks to long format | ELMPS raw cross-section | Create one SME row per `enterprise_slot`, dropping empty enterprise slots. |
 | Keep linkage keys separate from modeled attributes | ELMPS raw cross-section | Preserve `hhid`, `indid`, `pn`, and `enterprise_manager_person_number` for later joins. |
 
-## Recommended Next Step
-
-After this attribute selection, the next implementation step should be:
-
-1. Create a machine-readable variable map with final harmonized names and recode rules.
-2. Build extract-transform scripts for:
-   - `persons` from LFS 2024 plus ELMPS/Findex enrichers.
-   - `smes` from reshaped ELMPS enterprise blocks.
-3. Inspect overlap completeness and missingness before choosing the first Bayesian-network structure.
